@@ -1,5 +1,5 @@
-import Image from "next/image";
 import styles from "@/app/page.module.css";
+import Image from "next/image";
 
 import WorksList from "@/app/_components/WorksList";
 import { Works } from "@/app/_libs/microcms";
