@@ -1,13 +1,3 @@
-.works {
-  padding-bottom: 130px;
-}
-
-.worksInner {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .worksContent {
   display: flex;
   flex-wrap: wrap;
@@ -24,6 +14,6 @@
   min-width: 250px;
 }
 
-.worksItemTitle {
+.title {
   font-size: 1.5rem;
 }
