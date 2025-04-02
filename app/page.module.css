@@ -7,23 +7,3 @@
   margin-left: auto;
   margin-right: auto;
 }
-
-.worksContent {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
-}
-
-.worksTitle {
-  font-size: 2.5rem;
-}
-
-.image {
-  width: 400px;
-  height: auto;
-  min-width: 250px;
-}
-
-.worksItemTitle {
-  font-size: 1.5rem;
-}

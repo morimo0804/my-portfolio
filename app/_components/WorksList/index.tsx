@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./index.module.css";
 import { Works } from "@/app/_libs/microcms";
 
 type Props = {
@@ -19,7 +19,7 @@ export default function WorksList({ works }: Props) {
                 alt=""
                 width={1200}
                 height={630}
-              ></Image>
+              />
               <h3 className={styles.title}>{article.title}</h3>
             </div>
           </li>
