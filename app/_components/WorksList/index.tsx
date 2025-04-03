@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./index.module.css";
 import { Works } from "@/app/_libs/microcms";
 
@@ -12,16 +13,26 @@ export default function WorksList({ works }: Props) {
       <ul className={styles.worksContent}>
         {works.map((article) => (
           <li key={article.id} className={styles.list}>
-            <div className={styles.link}>
-              <Image
-                className={styles.image}
-                src="/no-image.png"
-                alt=""
-                width={1200}
-                height={630}
-              />
+            <Link href={`/works/${article.id}`} className={styles.link}>
+              {article.thumbnail ? (
+                <Image
+                  className={styles.image}
+                  src={article.thumbnail.url}
+                  alt=""
+                  width={article.thumbnail.width}
+                  height={article.thumbnail.height}
+                />
+              ) : (
+                <Image
+                  className={styles.image}
+                  src="/no-image.png"
+                  alt="No Image"
+                  width={1200}
+                  height={630}
+                />
+              )}
               <h3 className={styles.title}>{article.title}</h3>
-            </div>
+            </Link>
           </li>
         ))}
       </ul>

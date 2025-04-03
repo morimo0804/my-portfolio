@@ -1,7 +1,12 @@
 .worksContent {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 80px 50px;
+  justify-content: center;
+}
+
+.list {
+  width: 100%;
 }
 
 .worksTitle {
@@ -9,8 +14,6 @@
 }
 
 .image {
-  width: 400px;
-  height: auto;
   min-width: 250px;
 }
 

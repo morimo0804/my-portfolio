@@ -9,16 +9,22 @@
 }
 
 .items {
-  margin-bottom: 8px;
   white-space: nowrap;
+}
+
+.item {
+  margin-bottom: 8px;
 }
 
 @media (min-width: 640px) {
   .items {
-    margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+  }
+
+  .item {
+    margin-bottom: 0;
   }
 }

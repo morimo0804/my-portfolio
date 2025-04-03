@@ -1,29 +1,14 @@
 import styles from "@/app/page.module.css";
 import Image from "next/image";
-
+import { getWorksList } from "@/app/_libs/microcms";
+import { WORKS_LIST_LIMIT } from "./_constants";
 import WorksList from "@/app/_components/WorksList";
-import { Works } from "@/app/_libs/microcms";
 
-const data: {
-  contents: Works[];
-} = {
-  contents: [
-    {
-      id: "1",
-      title: "作品タイトル",
-    },
-    {
-      id: "2",
-      title: "作品タイトル",
-    },
-    {
-      id: "3",
-      title: "作品タイトル",
-    },
-  ],
-};
+export default async function Home() {
+  const data = await getWorksList({
+    limit: WORKS_LIST_LIMIT,
+  });
 
-export default function Home() {
   return (
     <>
       <section className={styles.top}>

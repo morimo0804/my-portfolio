@@ -5,9 +5,26 @@
   right: 0;
   width: 100%;
   padding-top: 20px;
+  text-align: center;
+}
+
+.logoLink {
+  display: inline-block;
+  margin-bottom: 30px;
 }
 
 .logo {
   height: 24px;
   width: auto;
+}
+
+.nav {
+  color: #fff;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }

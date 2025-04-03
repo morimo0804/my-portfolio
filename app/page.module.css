@@ -1,3 +1,10 @@
+.top {
+  margin-bottom: 130px;
+  padding: 200px 0 160px;
+  background: url(../public/img-mv.jpg) no-repeat center / cover;
+  color: #fff;
+}
+
 .works {
   padding-bottom: 130px;
 }
@@ -6,4 +13,8 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+.worksTitle {
+  margin-bottom: 30px;
+  font-size: 2rem;
 }
