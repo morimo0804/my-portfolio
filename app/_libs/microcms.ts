@@ -5,10 +5,6 @@ import type {
   MicroCMSListContent,
 } from "microcms-js-sdk";
 
-export type Menbers = {
-  name: string;
-} & MicroCMSListContent;
-
 export type Works = {
   title: string;
   content: string;
@@ -34,4 +30,16 @@ export const getWorksList = async (queries?: MicroCMSQueries) => {
     queries,
   });
   return listData;
+};
+
+export const getWorksDetail = async (
+  contentId: string,
+  queries?: MicroCMSQueries
+) => {
+  const detailData = await client.getListDetail<Works>({
+    endpoint: "works",
+    contentId,
+    queries,
+  });
+  return detailData;
 };

@@ -2,10 +2,10 @@ import "./globals.css";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
 import Head from "next/head";
-import { Zen_Kaku_Gothic_New } from "next/font/google";
+import { Noto_Sans_JP } from "next/font/google";
 
-const zenKakuGothicNew = Zen_Kaku_Gothic_New({
-  weight: "400",
+const notoSansJP = Noto_Sans_JP({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -23,7 +23,7 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css"
         />
       </Head>
-      <body className={zenKakuGothicNew.className}>
+      <body className={notoSansJP.className}>
         <Header />
         {children}
         <Footer />
