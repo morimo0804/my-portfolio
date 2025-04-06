@@ -14,7 +14,9 @@ export default async function Page({ params }: Props) {
 
   return (
     <>
-      <Article data={data} />
+      <div className={styles.articleInner}>
+        <Article data={data} />
+      </div>
     </>
   );
 }

@@ -17,12 +17,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <Head>
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css"
-        />
-      </Head>
       <body className={notoSansJP.className}>
         <Header />
         {children}

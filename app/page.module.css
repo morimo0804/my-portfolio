@@ -1,8 +1,16 @@
 .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 80vh;
   margin-bottom: 130px;
-  padding: 200px 0 160px;
-  background: url(../public/img-mv.jpg) no-repeat center / cover;
-  color: #fff;
+  background: url(../public/top_Bg.jpg) no-repeat center / cover;
+}
+
+.mainTitle {
+  font-size: 4rem;
+  font-weight: 400;
 }
 
 .works {
@@ -14,7 +22,46 @@
   margin-left: auto;
   margin-right: auto;
 }
-.worksTitle {
-  margin-bottom: 30px;
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  width: 90%;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+.title {
   font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.lines {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lines span {
+  height: 4px;
+  background-color: var(--color-catch);
+  width: 100%;
+}
+
+.lines span:first-child {
+  width: 97%;
+  margin-left: auto;
+}
+
+.contact {
+  padding-bottom: 130px;
+}
+
+.contactInner {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }

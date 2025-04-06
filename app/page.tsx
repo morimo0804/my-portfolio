@@ -10,17 +10,32 @@ export default async function Home() {
   });
 
   return (
-    <>
+    <main>
       <section className={styles.top}>
-        <h1 className={styles.title}>portfolio</h1>
-        <p className={styles.text}>ポートフォリオ</p>
+        <h1 className={styles.mainTitle}>portfolio</h1>
       </section>
       <section className={styles.works}>
+        <div className={styles.heading}>
+          <h2 className={styles.title}>WORKS</h2>
+          <div className={styles.lines}>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
         <div className={styles.worksInner}>
-          <h2 className={styles.worksTitle}>WORKS</h2>
           <WorksList works={data.contents} />
         </div>
       </section>
-    </>
+      <section className={styles.contact}>
+        <div className={styles.heading}>
+          <h2 className={styles.title}>CONTACT</h2>
+          <div className={styles.lines}>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div className={styles.contactInner}></div>
+      </section>
+    </main>
   );
 }

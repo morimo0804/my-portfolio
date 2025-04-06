@@ -1,0 +1,12 @@
+.articleInner {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 180px;
+}
+
+@media (min-width: 1000px) {
+  .articleInner {
+    width: 60%;
+  }
+}

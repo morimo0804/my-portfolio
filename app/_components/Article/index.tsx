@@ -19,12 +19,24 @@ export default function Article({ data }: Props) {
           height={data.thumbnail.height}
         />
       )}
-      <div
-        className={styles.content}
-        dangerouslySetInnerHTML={{
-          __html: data.content,
-        }}
-      />
+      {data.metaInfo && data.metaInfo.length > 0 && (
+        <dl className={styles.metaInfo}>
+          {data.metaInfo.map((item, index) => (
+            <div className={styles.info} key={index}>
+              <dt>{item.label}</dt>
+              <dd dangerouslySetInnerHTML={{ __html: item.value }} />
+            </div>
+          ))}
+        </dl>
+      )}
+      {data.content && (
+        <div
+          className={styles.content}
+          dangerouslySetInnerHTML={{
+            __html: data.content,
+          }}
+        />
+      )}
     </main>
   );
 }

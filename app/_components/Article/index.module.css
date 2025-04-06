@@ -1,0 +1,36 @@
+.title {
+  margin-bottom: 50px;
+  padding-left: 30px;
+  border-left: 10px double var(--color-catch);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.thumbnail {
+  margin-bottom: 50px;
+}
+
+.metaInfo {
+  width: 80%;
+  margin: 0 auto 50px;
+}
+
+.info {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.info dt {
+  width: 140px;
+  flex-shrink: 0;
+}
+
+.info dd {
+  margin-left: 0;
+  flex: 1;
+}
+
+.info a {
+  color: #0066cc;
+  text-decoration: underline;
+}

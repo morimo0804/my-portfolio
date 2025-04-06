@@ -7,6 +7,10 @@ import type {
 
 export type Works = {
   title: string;
+  metaInfo?: {
+    label: string;
+    value: string;
+  }[];
   content: string;
   thumbnail?: MicroCMSImage;
 } & MicroCMSListContent;

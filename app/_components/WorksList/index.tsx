@@ -27,8 +27,8 @@ export default function WorksList({ works }: Props) {
                   className={styles.image}
                   src="/no-image.png"
                   alt="No Image"
-                  width={1200}
-                  height={630}
+                  width={2944}
+                  height={1618}
                 />
               )}
               <h3 className={styles.title}>{article.title}</h3>
