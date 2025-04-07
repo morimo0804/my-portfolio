@@ -13,7 +13,7 @@ export default function Footer() {
             <Link href="/works">WORKS</Link>
           </li>
           <li className={styles.item}>
-            <Link href="/">CONTACT</Link>
+            <Link href="/#area1">CONTACT</Link>
           </li>
         </ul>
       </nav>

@@ -3,6 +3,8 @@ import { getWorksDetail } from "@/app/_libs/microcms";
 import Article from "@/app/_components/Article";
 import styles from "./page.module.css";
 
+export const revalidate = 60;
+
 type Props = {
   params: {
     slug: string;

@@ -24,7 +24,7 @@ export default async function Home() {
           <WorksList works={data.contents} />
         </div>
       </section>
-      <section className={styles.contact}>
+      <section id="area1" className={styles.contact}>
         <Heading title="CONTACT" />
         <div className={styles.contactInner}></div>
       </section>

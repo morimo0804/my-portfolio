@@ -24,7 +24,7 @@ export default function Header() {
             <Link href="/works">WORKS</Link>
           </li>
           <li>
-            <Link href="/">CONTACT</Link>
+            <Link href="/#area1">CONTACT</Link>
           </li>
         </ul>
       </nav>
