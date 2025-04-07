@@ -15,10 +15,10 @@ export default async function Page({ params }: Props) {
   const data = await getWorksDetail(params.slug).catch(notFound);
 
   return (
-    <>
+    <main>
       <div className={styles.articleInner}>
         <Article data={data} />
       </div>
-    </>
+    </main>
   );
 }
