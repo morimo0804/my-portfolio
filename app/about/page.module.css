@@ -1,35 +1,5 @@
-.heading {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  width: 90%;
-  margin-left: auto;
-  margin-bottom: 50px;
+.about {
   padding-top: 180px;
-}
-
-.title {
-  font-size: 2rem;
-  font-weight: bold;
-  font-style: italic;
-}
-
-.lines {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.lines span {
-  height: 4px;
-  background-color: #5c9ded;
-  width: 100%;
-}
-
-.lines span:first-child {
-  width: 97%;
-  margin-left: auto;
 }
 
 .inner {

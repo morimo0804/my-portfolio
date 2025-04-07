@@ -1,19 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
+import Heading from "@/app/_components/Heading";
 
 export default function Page() {
   return (
-    <main>
-      <div className={styles.heading}>
-        <h2 className={styles.title}>ABOUT</h2>
-        <div className={styles.lines}>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
+    <main className={styles.about}>
+      <Heading title="ABOUT" />
       <div className={styles.inner}>
-        <section className={styles.about}></section>
+        <section className={styles.info}></section>
         <section className={styles.skill}>
           <h3 className={styles.subTitle}>skill</h3>
           <dl className={styles.items}>
@@ -62,7 +57,6 @@ export default function Page() {
                 </li>
               </ul>
             </dd>
-
             <dt className={styles.catch}>デザイン</dt>
             <dd>
               <ul className={styles.logoList}>

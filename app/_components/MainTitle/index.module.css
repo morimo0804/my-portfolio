@@ -1,0 +1,26 @@
+.mainTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid var(--color-text-main);
+  animation: blink 0.9s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--color-text-main);
+  }
+}
+
+@media (min-width: 640px) {
+  .mainTitle {
+    font-size: 6rem;
+  }
+}
