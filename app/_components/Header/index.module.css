@@ -8,14 +8,9 @@
   text-align: center;
 }
 
-.logoLink {
-  display: inline-block;
-  margin-bottom: 30px;
-}
-
 .logo {
-  height: 24px;
-  width: auto;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
 .nav {

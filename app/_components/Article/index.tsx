@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Works } from "@/app/_libs/microcms";
 import styles from "./index.module.css";
 
@@ -37,6 +38,9 @@ export default function Article({ data }: Props) {
           }}
         />
       )}
+      <Link className={styles.btn} href="/works">
+        <span>WORKS一覧へ</span>
+      </Link>
     </main>
   );
 }
