@@ -18,8 +18,9 @@
   padding-bottom: 130px;
 }
 
-.worksInner {
-  width: 80%;
+.worksInner,
+.contactInner {
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -28,8 +29,9 @@
   padding-bottom: 130px;
 }
 
-.contactInner {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+@media (min-width: 640px) {
+  .worksInner,
+  .contactInner {
+    width: 80%;
+  }
 }

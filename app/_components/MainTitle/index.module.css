@@ -2,7 +2,7 @@
   display: flex;
   font-size: 3rem;
   font-weight: 700;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -20,5 +20,6 @@
 @media (min-width: 640px) {
   .title {
     font-size: 6rem;
+    letter-spacing: 0.5rem;
   }
 }

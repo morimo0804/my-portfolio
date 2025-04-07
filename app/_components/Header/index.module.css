@@ -3,14 +3,21 @@
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
-  padding-top: 20px;
+  padding: 20px 0;
   text-align: center;
+  background-color: rgba(180, 180, 200, 0.4);
+}
+
+.inner {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo {
-  margin-bottom: 20px;
-  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .nav {
@@ -22,4 +29,17 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
+}
+
+@media (min-width: 640px) {
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
 }

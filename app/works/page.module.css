@@ -1,9 +1,15 @@
 .works {
-  padding-top: 180px;
+  padding-top: 200px;
 }
 
 .inner {
-  width: 80%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 640px) {
+  .inner {
+    width: 80%;
+  }
 }
