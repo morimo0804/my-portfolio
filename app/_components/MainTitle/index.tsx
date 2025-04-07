@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 import styles from "./index.module.css";
 
 type Props = {
@@ -8,20 +8,22 @@ type Props = {
 };
 
 export default function MainTitle({ text }: Props) {
-  const [displayedText, setDisplayedText] = useState("");
+  const titleRef = useRef<HTMLHeadingElement | null>(null);
 
   useEffect(() => {
-    let i = 0;
-    const interval = setInterval(() => {
-      if (i < text.length) {
-        setDisplayedText((prev) => prev + text.charAt(i));
-        i++;
-      } else {
-        clearInterval(interval);
-      }
-    }, 200);
-    return () => clearInterval(interval);
-  }, [text]);
+    const timer = setTimeout(() => {
+      titleRef.current?.classList.add(styles.visible);
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
 
-  return <h1 className={styles.mainTitle}>{displayedText}</h1>;
+  return (
+    <h1 ref={titleRef} className={styles.title}>
+      {text.split("").map((char, index) => (
+        <span key={index} style={{ transitionDelay: `${index * 0.06}s` }}>
+          {char === " " ? "\u00A0" : char}
+        </span>
+      ))}
+    </h1>
+  );
 }
