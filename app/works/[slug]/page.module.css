@@ -2,7 +2,7 @@
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
+  padding: 200px 0 130px;
 }
 
 @media (min-width: 1000px) {

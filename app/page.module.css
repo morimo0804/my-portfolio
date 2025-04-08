@@ -29,6 +29,50 @@
   padding-bottom: 130px;
 }
 
+.text {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+}
+
+.items dt {
+  width: 90px;
+  flex-shrink: 0;
+}
+
+.btn {
+  display: block;
+  width: fit-content;
+  margin: 50px auto 0;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  background-color: var(--color-catch);
+  transform: skew(-20deg);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  border: 2px solid var(--color-catch);
+  color: var(--color-text-main);
+  background-color: #fff;
+}
+
+.btn span {
+  display: block;
+  transform: skew(20deg);
+}
+
 @media (min-width: 640px) {
   .worksInner,
   .contactInner {

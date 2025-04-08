@@ -7,41 +7,58 @@ export default function Page() {
   return (
     <main className={styles.about}>
       <Heading title="ABOUT" />
-      <div className={styles.inner}>
-        <section className={styles.info}>
-          <div className={styles.name}>
-            <h1 className={styles.title}>森茂勇斗</h1>
-            <small className={styles.subText}>（もりも　はやと）</small>
+      <section className={styles.info}>
+        <div className={styles.infoInner}>
+          <Image
+            className={styles.image}
+            src="/my-photo.jpg"
+            alt=""
+            width={320}
+            height={320}
+          />
+          <div className={styles.side}>
+            <div className={styles.name}>
+              <h1 className={styles.title}>森茂勇斗</h1>
+              <small className={styles.subText}>（もりも　はやと）</small>
+            </div>
+            <p>トライデントコンピュータ専門学校　Webデザイン学科</p>
+            <dl className={styles.contents}>
+              <div className={styles.content}>
+                <dt>生年月日：</dt>
+                <dd>2005年8月4日</dd>
+              </div>
+              <div className={styles.content}>
+                <dt>趣味：</dt>
+                <dd>犬と遊ぶこと、グッズ集め</dd>
+              </div>
+              <div className={styles.content}>
+                <dt>保有資格：</dt>
+                <dd>
+                  ITパスポート / 色彩検定3級 /
+                  Webクリエイター能力認定試験エキスパート
+                </dd>
+              </div>
+            </dl>
           </div>
-          <p>トライデントコンピュータ専門学校　Webデザイン学科</p>
-          <dl className={styles.contents}>
-            <div className={styles.content}>
-              <dt>生年月日：</dt>
-              <dd>2005年8月4日</dd>
-            </div>
-            <div className={styles.content}>
-              <dt>趣味：</dt>
-              <dd>犬と遊ぶこと、グッズ集め</dd>
-            </div>
-            <div className={styles.content}>
-              <dt>資格：</dt>
-              <dd>
-                ITパスポート / 色彩検定3級 /
-                Webクリエイター能力認定試験エキスパート
-              </dd>
-            </div>
-          </dl>
-        </section>
+        </div>
+      </section>
+      <div className={styles.inner}>
         <section className={styles.comment}>
-          <h3 className={styles.subTitle}>comment</h3>
+          <div className={styles.subInner}>
+            <h3 className={styles.subTitle}>comment</h3>
+          </div>
           <div className={styles.text}>
             <p>
-              2024年3月からトライデントコンピュータ専門学校のWebデザイン学科に入学してサイト制作の勉強をしています。将来はフロントエンドエンジニアを目指しています。HTML、CSS、JavaScriptの基本的な知識の勉強をしており、WordPressやmicroCMSなどのCMSを使った作品も制作経験があります。現在はNext.jsの勉強を進めており、今後もいろいろな技術を勉強していきたいと思っています。
+              2024年3月からトライデントコンピュータ専門学校のWebデザイン学科に入学してサイト制作の勉強をしています。
+              <br />
+              将来はフロントエンドエンジニアを目指しています。HTML、CSS、JavaScriptの基本的な知識の勉強をしており、WordPressやmicroCMSなどのCMSを使った作品も制作経験があります。現在はNext.jsの勉強を進めており、今後もいろいろな技術を勉強していきたいと思っています。
             </p>
           </div>
         </section>
         <section className={styles.skill}>
-          <h3 className={styles.subTitle}>skill</h3>
+          <div className={styles.subInner}>
+            <h3 className={styles.subTitle}>skill</h3>
+          </div>
           <dl className={styles.items}>
             <dt className={styles.catch}>コーディング</dt>
             <dd>
@@ -86,7 +103,44 @@ export default function Page() {
                     loading="lazy"
                   />
                 </li>
+                <li>
+                  <Image
+                    className={styles.logo}
+                    src="/nextjs.svg"
+                    alt="next.js"
+                    width={60}
+                    height={60}
+                    loading="lazy"
+                  />
+                </li>
+                <li>
+                  <Image
+                    className={styles.logo}
+                    src="/wordpress.png"
+                    alt="wordpress"
+                    width={60}
+                    height={60}
+                    loading="lazy"
+                  />
+                </li>
+                <li>
+                  <Image
+                    className={styles.logo}
+                    src="/icon-black.png"
+                    alt="microCMS"
+                    width={60}
+                    height={60}
+                    loading="lazy"
+                  />
+                </li>
               </ul>
+            </dd>
+            <dd className={styles.text}>
+              <p>
+                HTML、CSS、JavaScriptといった基本的な知識を勉強しています。
+                <br />
+                また、WordPressやmicroCMSなどのCMSにも触れた経験があり、基礎的な操作方法を学びました。デザインを再現しながら、読みやすく綺麗なコードを書くことを心掛けており、まだ触れたことのない技術に挑戦することも大切にしています。現在は、Next.jsを自主的に学習しています。
+              </p>
             </dd>
             <dt className={styles.catch}>デザイン</dt>
             <dd>
@@ -122,6 +176,13 @@ export default function Page() {
                   />
                 </li>
               </ul>
+            </dd>
+            <dd className={styles.text}>
+              <p>
+                Photoshop、Illustrator、Figmaの基本的な操作ができます。
+                <br />
+                視認性やレイアウトバランス、配色などを意識したデザインを心掛けており、見る人にとってわかりやすく、心地のよいデザインを目指しています。コーディングを見据えた設計を意識しながら、サイトデザインに取り組んでいます。
+              </p>
             </dd>
           </dl>
         </section>

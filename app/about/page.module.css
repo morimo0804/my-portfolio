@@ -2,14 +2,23 @@
   padding-top: 200px;
 }
 
+.infoInner,
 .inner {
-  width: 90%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .info {
   padding-bottom: 130px;
+}
+
+.infoInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
 }
 
 .name {
@@ -42,7 +51,6 @@
 }
 
 .content dd {
-  margin-left: 0;
   flex: 1;
 }
 
@@ -50,11 +58,16 @@
   padding-bottom: 130px;
 }
 
+.subInner {
+  text-align: center;
+}
+
 .subTitle {
-  margin-bottom: 20px;
+  display: inline-block;
+  margin: 0 auto 40px;
+  border-bottom: 2px solid var(--color-catch);
   font-size: 1.7rem;
   font-weight: 600;
-  text-align: center;
 }
 
 .text {
@@ -67,18 +80,30 @@
 }
 
 .catch {
+  margin-bottom: 30px;
   font-size: 1.3rem;
-  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.items .text {
+  margin-bottom: 50px;
+}
+
+.items .text:last-child {
+  margin-bottom: 0;
 }
 
 .logoList {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, max-content));
   gap: 30px;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1000px) {
   .inner {
-    width: 60%;
+    width: 55%;
   }
 }
