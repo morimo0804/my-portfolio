@@ -14,23 +14,25 @@ export default function WorksList({ works }: Props) {
         {works.map((article) => (
           <li key={article.id} className={styles.list}>
             <Link href={`/works/${article.id}`} className={styles.link}>
-              {article.thumbnail ? (
-                <Image
-                  className={styles.image}
-                  src={article.thumbnail.url}
-                  alt=""
-                  width={article.thumbnail.width}
-                  height={article.thumbnail.height}
-                />
-              ) : (
-                <Image
-                  className={styles.image}
-                  src="/no-image.png"
-                  alt="No Image"
-                  width={2944}
-                  height={1618}
-                />
-              )}
+              <div className={styles.container}>
+                {article.thumbnail ? (
+                  <Image
+                    className={styles.image}
+                    src={article.thumbnail.url}
+                    alt=""
+                    width={article.thumbnail.width}
+                    height={article.thumbnail.height}
+                  />
+                ) : (
+                  <Image
+                    className={styles.image}
+                    src="/no-image.png"
+                    alt="No Image"
+                    width={2944}
+                    height={1618}
+                  />
+                )}
+              </div>
               <h3 className={styles.title}>{article.title}</h3>
             </Link>
           </li>

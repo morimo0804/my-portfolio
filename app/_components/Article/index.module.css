@@ -11,7 +11,7 @@
 }
 
 .metaInfo {
-  width: 80%;
+  width: 100%;
   margin: 0 auto 100px;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .info dt {
-  width: 140px;
+  width: 100px;
   flex-shrink: 0;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .content h2 {
-  margin-bottom: 30px;
+  margin: 100px 0 30px;
   padding-bottom: 5px;
   border-bottom: 2px solid var(--color-catch);
   font-size: 2rem;
@@ -84,4 +84,14 @@
 .btn span {
   display: block;
   transform: skew(20deg);
+}
+
+@media (min-width: 640px) {
+  .metaInfo {
+    width: 80%;
+  }
+
+  .info dt {
+    width: 120px;
+  }
 }
