@@ -9,6 +9,8 @@ import MainTitle from "@/app/_components/MainTitle";
 import Heading from "@/app/_components/Heading";
 import WorksList from "@/app/_components/WorksList";
 
+export const revalidate = 60;
+
 export default async function Home() {
   const data = await getWorksList({
     limit: WORKS_LIST_LIMIT,
