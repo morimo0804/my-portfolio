@@ -16,6 +16,28 @@
   margin-bottom: 8px;
 }
 
+.item a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.item a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-text-main);
+  transition: width 0.3s ease;
+}
+
+.item a:hover::after {
+  width: 100%;
+}
+
 @media (min-width: 640px) {
   .items {
     display: flex;
