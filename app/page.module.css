@@ -1,4 +1,5 @@
 .top {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,6 +13,36 @@
   font-size: 5rem;
   font-weight: 800;
   letter-spacing: 0.3rem;
+}
+
+@keyframes shootingStar {
+  0% {
+    transform: translateY(-100px) translateX(0); /* 始まりの位置 */
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) translateX(100vw); /* 終わりの位置 */
+    opacity: 0;
+  }
+}
+
+.shootingStar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  animation: shootingStar 3s linear infinite;
+}
+
+.shootingStar:nth-child(odd) {
+  animation-duration: 4s;
+}
+
+.shootingStar:nth-child(even) {
+  animation-duration: 5s;
 }
 
 .works {

@@ -20,6 +20,9 @@ export default async function Home() {
     <main>
       <section className={styles.top}>
         <MainTitle text="PORTFOLIO" />
+        {[...Array(10)].map((_, index) => (
+          <div key={index} className={styles.shootingStar}></div>
+        ))}
       </section>
       <section className={styles.works}>
         <Heading title="WORKS" />
