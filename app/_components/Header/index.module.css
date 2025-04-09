@@ -6,6 +6,7 @@
   padding: 20px 0;
   text-align: center;
   background-color: rgba(180, 180, 200, 0.4);
+  z-index: 999;
 }
 
 .inner {
