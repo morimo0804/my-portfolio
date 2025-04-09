@@ -5,7 +5,6 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "images.microcms-assets.io",
-        pathname: "/assets/*",
       },
     ],
   },
