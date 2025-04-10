@@ -20,9 +20,25 @@ export default async function Home() {
     <main>
       <section className={styles.top}>
         <MainTitle text="PORTFOLIO" />
-        {[...Array(10)].map((_, index) => (
-          <div key={index} className={styles.shootingStar}></div>
-        ))}
+        {Array.from({ length: 10 }).map((_, index) => {
+          const isTop = Math.random() < 0.5;
+          const top = isTop ? -20 : Math.floor(Math.random() * 100);
+          const left = isTop ? Math.floor(Math.random() * 100) : 105;
+
+          const delay = (Math.random() * 5).toFixed(1);
+
+          return (
+            <div
+              key={index}
+              className={styles.shootingStar}
+              style={{
+                top: `${top}%`,
+                left: `${left}%`,
+                animationDelay: `${delay}s`,
+              }}
+            />
+          );
+        })}
       </section>
       <section className={styles.works}>
         <Heading title="WORKS" />

@@ -5,8 +5,9 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  margin-bottom: 130px;
+  margin-bottom: 180px;
   background: url(../public/top_Bg.jpg) no-repeat center / cover;
+  overflow: hidden;
 }
 
 .mainTitle {
@@ -15,36 +16,35 @@
   letter-spacing: 0.3rem;
 }
 
-@keyframes shootingStar {
+/* ラインが流れるアニメーション */
+.shootingStar {
+  position: absolute;
+  width: 6px;
+  height: 500px;
+  background: linear-gradient(white, rgba(255, 255, 255, 0));
+  opacity: 0;
+  transform: rotate(48deg);
+  animation: shooting 2.5s linear infinite;
+}
+
+@keyframes shooting {
   0% {
-    transform: translateY(-100px) translateX(0); /* 始まりの位置 */
+    transform: translate(0, 0) rotate(48deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  80% {
     opacity: 1;
   }
   100% {
-    transform: translateY(100vh) translateX(100vw); /* 終わりの位置 */
+    transform: translate(-1500px, 1500px) rotate(48deg);
     opacity: 0;
   }
 }
 
-.shootingStar {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 2px;
-  height: 2px;
-  background-color: white;
-  border-radius: 50%;
-  animation: shootingStar 3s linear infinite;
-}
-
-.shootingStar:nth-child(odd) {
-  animation-duration: 4s;
-}
-
-.shootingStar:nth-child(even) {
-  animation-duration: 5s;
-}
-
+/* works */
 .works {
   padding-bottom: 130px;
 }
@@ -56,6 +56,7 @@
   margin-right: auto;
 }
 
+/* contact */
 .contact {
   padding-bottom: 130px;
 }
