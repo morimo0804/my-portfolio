@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "WORKS",
+};
+
 type Props = {
   children: React.ReactNode;
 };

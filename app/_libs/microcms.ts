@@ -47,3 +47,11 @@ export const getWorksDetail = async (
   });
   return detailData;
 };
+
+export const getAllWorksList = async () => {
+  const listData = await client.getAllContents<Works>({
+    endpoint: "works",
+  });
+
+  return listData;
+};

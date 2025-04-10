@@ -3,6 +3,10 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import Heading from "@/app/_components/Heading";
 
+export const metadata = {
+  title: "ABOUT",
+};
+
 export default function Page() {
   return (
     <main className={styles.about}>
