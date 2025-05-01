@@ -45,14 +45,51 @@ export default async function Home() {
         <div className={styles.worksInner}>
           <WorksList works={data.contents} />
         </div>
+        <div className={styles.circleWrapper}>
+          <Image
+            className={`${styles.circle} ${styles.circle1}`}
+            src="/circle1.png"
+            alt=""
+            width={500}
+            height={500}
+          />
+          <Image
+            className={`${styles.circle} ${styles.circle2}`}
+            src="/circle2.png"
+            alt=""
+            width={350}
+            height={350}
+          />
+          <Image
+            className={`${styles.circle} ${styles.circle3}`}
+            src="/circle3.png"
+            alt=""
+            width={200}
+            height={200}
+          />
+        </div>
       </section>
       <section id="area1" className={styles.contact}>
         <Heading title="CONTACT" />
         <div className={styles.contactInner}>
           <p className={styles.text}>お気軽にお問い合わせください。</p>
           <dl className={styles.items}>
-            <dt>Gmail：</dt>
-            <dd>hayato.morimo.0804@gmail.com</dd>
+            <div className={styles.item}>
+              <dt>Gmail：</dt>
+              <dd>hayato.morimo.0804@gmail.com</dd>
+            </div>
+            <div className={styles.item}>
+              <dt>GitHub：</dt>
+              <dd>
+                <Link
+                  href="https://github.com/morimo0804"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://github.com/morimo0804
+                </Link>
+              </dd>
+            </div>
           </dl>
           <Link
             className={styles.btn}

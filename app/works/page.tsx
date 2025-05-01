@@ -13,6 +13,32 @@ export default async function Page() {
       <div className={styles.inner}>
         <WorksList works={works} />
       </div>
+      <div className={styles.circleWrapper}>
+        <Image
+          className={`${styles.circle} ${styles.circle1}`}
+          src="/circle1.png"
+          alt=""
+          width={500}
+          height={500}
+          priority
+        />
+        <Image
+          className={`${styles.circle} ${styles.circle2}`}
+          src="/circle2.png"
+          alt=""
+          width={350}
+          height={350}
+          priority
+        />
+        <Image
+          className={`${styles.circle} ${styles.circle3}`}
+          src="/circle3.png"
+          alt=""
+          width={200}
+          height={200}
+          priority
+        />
+      </div>
     </main>
   );
 }
