@@ -46,6 +46,10 @@
   text-align: justify;
 }
 
+.content strong {
+  font-weight: bold;
+}
+
 .content h2 {
   margin: 100px 0 30px;
   padding-bottom: 5px;
