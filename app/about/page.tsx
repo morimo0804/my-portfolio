@@ -19,6 +19,7 @@ export default function Page() {
             alt=""
             width={320}
             height={320}
+            priority
           />
           <div className={styles.side}>
             <div className={styles.name}>
