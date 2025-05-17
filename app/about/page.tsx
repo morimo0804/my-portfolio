@@ -154,7 +154,8 @@ export default function Page() {
               <p>
                 HTML、CSS、JavaScriptといった基本的な知識を勉強しています。
                 <br />
-                また、WordPressやmicroCMSなどのCMSにも触れた経験があり、基礎的な操作方法を学びました。デザインを再現しながら、読みやすく綺麗なコードを書くことを心がけており、まだ触れたことのない技術に挑戦することも大切にしています。現在は、Next.jsを自主的に学習しています。
+                また、WordPressやmicroCMSなどのCMSにも触れた経験があり、基礎的な操作方法を学びました。デザインを再現しながら、読みやすく綺麗なコードを書くことを心がけており、まだ触れたことのない技術に挑戦することも大切にしています。現在は、Next.jsやTailwind
+                CSSを自主的に学習しています。
               </p>
             </dd>
             <dt className={styles.catch}>デザイン</dt>
