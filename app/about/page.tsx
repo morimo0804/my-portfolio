@@ -19,7 +19,7 @@ export default function Page() {
             alt=""
             width={320}
             height={320}
-            priority
+            loading="eager"
           />
           <div className={styles.side}>
             <div className={styles.name}>
@@ -93,6 +93,16 @@ export default function Page() {
                     className={styles.logo}
                     src="/sass.png"
                     alt="Sass"
+                    width={60}
+                    height={60}
+                    loading="lazy"
+                  />
+                </li>
+                <li>
+                  <Image
+                    className={styles.logo}
+                    src="/tailwindcss.png"
+                    alt="tailwindcss"
                     width={60}
                     height={60}
                     loading="lazy"
