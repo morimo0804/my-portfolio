@@ -101,7 +101,7 @@ export default function Page() {
                 <li>
                   <Image
                     className={styles.logo}
-                    src="/tailwindcss.png"
+                    src="/tailwindcss.svg"
                     alt="tailwindcss"
                     width={60}
                     height={60}
