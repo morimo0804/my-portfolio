@@ -56,7 +56,7 @@ export default function Page() {
             <p>
               2024年3月からトライデントコンピュータ専門学校のWebデザイン学科に入学してサイト制作の勉強をしています。
               <br />
-              将来はフロントエンドエンジニアを目指しています。HTML、CSS、JavaScriptの基本的な知識の勉強をしており、WordPressやmicroCMSなどのCMSを使った作品も制作経験があります。現在はNext.jsの勉強を進めており、今後もいろいろな技術を勉強していきたいと思っています。
+              志望職種はフロントエンドエンジニア、Webデザイナー、Webエンジニアです。HTML、CSS、JavaScriptの基本的な知識の勉強をしており、WordPressやmicroCMSなどのCMSを使った作品も制作経験があります。現在はNext.jsの勉強を進めており、今後もいろいろな技術を勉強していきたいと思っています。
             </p>
           </div>
         </section>
